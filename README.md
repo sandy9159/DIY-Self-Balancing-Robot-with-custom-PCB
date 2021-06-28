@@ -13,6 +13,8 @@ I have use a custom made PCB, Arduno nano, MPU6050, A4988 driver, HC-05 bt modul
 detail material list you can found further in this post.
 Balancingwii firmware and EZ-GUI android app is used in this project to control robot via Bluetooth connection.
 
+I have used a custom build PCB in this project which I have ordered from  [JLCPCB.com](https://jlcpcb.com/IAT)
+
 So lets begin with some basic of self balancing robot.
 
 ## Basics of self balancing robot
@@ -73,7 +75,31 @@ Above image is the circuit drawing of self balancing robot.
 I have prepare a PCB also you can download the Gerber file to order PCB or you can also edit the PCB in easyeda platform.
 https://easyeda.com/sharmaz747/self-balancing
 
-Note :- KINDLY CROSS CHECK ON YOUR OWN BEFORE ORDERING PCB..
+# PCB
+
+Here I prepared a custom PCB for this Self balancing robot
+This PCB have provision to connect two stepper motors,
+one HC-05 BT module.
+
+
+PCB is key of this project because if we build such project without
+custom PCB we will never get desire results and wiring became too messy
+
+
+I have design this in EasyEDA platform and order it from [JLCPCB.com](https://jlcpcb.com/IAT)
+and you won’t believe I get my PCB in just a week to my door step and in quite low price.
+
+
+[JLCPCB.com](https://jlcpcb.com/IAT) offering PCB in as low as $2 for 1-4 Layer PCBs
+Guys I will recommended you must have to try [JLCPCB.com](https://jlcpcb.com/IAT)
+service for your future PCB need.
+
+
+To order PCB just click here [JLCPCB.com](https://jlcpcb.com/IAT)
+there are so many welcome benefits for new users hurry up visit [JLCPCB.com](https://jlcpcb.com/IAT)
+
+![MVI_5077 00_01_19_01 Still003](https://user-images.githubusercontent.com/19898602/123571896-d2907880-d7e8-11eb-8c13-19799fdce237.jpg)
+
 
 ![image](https://user-images.githubusercontent.com/19898602/123569241-9a3a6b80-d7e3-11eb-9761-8ae0c2c71cfb.png)
 
@@ -115,6 +141,8 @@ D4 – ENABLE (for both)
 # Robot construction
 
 Below is the basic construction image of self balancing robot
+
+
 
 
 ![image](https://user-images.githubusercontent.com/19898602/123569366-ceae2780-d7e3-11eb-8f22-8f4a7d8e6471.png)
@@ -187,5 +215,83 @@ You can change here PITCH to ROLL
 >  #define CURRENT_AXIS    PITCH       // possible to choose ROLL or PITCH axis as current.
 
 
+By default mostly all HC-05 BT module came with default 9600 baud rate.
 
+but for this project note that the baud rate of your HC-05 BT module must be 115200 other wise you cannot able to connect with android app
+
+You can change the baud rate of HC-05 bt module via AT command search it on google you’ll get many tutorial about it.
+
+
+>/* This is the speed of the serial interfaces */
+
+
+>    #define SERIAL0_COM_SPEED 115200
+
+
+>    #define SERIAL1_COM_SPEED 115200
+
+
+>    #define SERIAL2_COM_SPEED 115200
+
+
+>    #define SERIAL3_COM_SPEED 115200
+
+If you feel your robot is less responsive then you can try to change this setting in config.h file, but be remember the values must be in constraint.
+
+>  #define MAX_SPEED           350  // should be <= 500
+
+
+>   #define MAX_TARGET_ANGLE    130  // where 10 = 1 degree, should be <= 15 degree (i.e. <= 150) 
+
+
+>  #define MAX_STEERING        90   // should be <= 100
+
+# Android app
+EZ-GUI app is we going to use here you can learn more about EZ-GUI from here
+EZ-GUI app is available to download from play store for free by click the link below or by scanning the below QR code.
+
+https://play.google.com/store/apps/details?id=com.ezio.multiwii
+
+# App configuration
+Open the downloaded app and click on the three dot at top right corner of screen
+
+Click on the settings.
+
+Select on BT Device to select BT module
+now click on NEXT button
+
+Now select the firmware “Multiwii 2.40” from the list and click next next until you reach the home screen.
+
+![image](https://user-images.githubusercontent.com/19898602/123570929-d02d1f00-d7e6-11eb-8e4d-38d04a05c772.png)
+
+
+Click on “CONNECT” button to connect with bluetooth.
+
+![image](https://user-images.githubusercontent.com/19898602/123570946-d8855a00-d7e6-11eb-93d0-9a490ad0e604.png)
+
+
+Clink on “AUX” button
+
+![image](https://user-images.githubusercontent.com/19898602/123570955-dde2a480-d7e6-11eb-91cc-39f9bf15cbda.png)
+
+
+Tick mark as shown above.
+
+![image](https://user-images.githubusercontent.com/19898602/123570964-e3d88580-d7e6-11eb-91ae-4e691bb073d1.png)
+
+
+This is my PID settings.
+It is not compulsory that this PID settings will work for you bot each and every bot is unique.
+PID is depends on bot desing, center of gravity, wheel size, motor type, and more.
+try different setting you will surely get sweet setting after some trials.
+now back from this screen, and click on three dot at top right corner and go to “advance” and then go to “Untested” and then click on “Model control”
+
+![image](https://user-images.githubusercontent.com/19898602/123570979-eaff9380-d7e6-11eb-8c9b-e0ae18949168.png)
+
+
+Now this is the screen to play with you bot, you can run you self balancing bot from the joystick,
+play with this screen try different settings to learn more.
+
+In this way our DIY Self Balancing Robot is ready to play. enjoy..
+if you have any question please ask in comment section.
 
