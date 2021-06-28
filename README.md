@@ -120,6 +120,72 @@ Below is the basic construction image of self balancing robot
 ![image](https://user-images.githubusercontent.com/19898602/123569366-ceae2780-d7e3-11eb-8f22-8f4a7d8e6471.png)
 
 
+![image](https://user-images.githubusercontent.com/19898602/123569844-b7bc0500-d7e4-11eb-8600-b45f0a69103d.png)
+
+I have cut three pices of size 130 x 65mm
+from MDF sheet of 4mm thick
+
+![image](https://user-images.githubusercontent.com/19898602/123569860-c1456d00-d7e4-11eb-8ac4-f48f09e5798b.png)
+
+
+Here I drill some holes to mout stepper motors and insert M3 rod through all three MDF board.
+
+![image](https://user-images.githubusercontent.com/19898602/123569890-cdc9c580-d7e4-11eb-93c7-06cc84b2af6c.png)
+
+Then I cut two pice of 20 x 20 mm aluminium angle of 42mm in size, this is used to mount stepper motor with platform.
+
+![image](https://user-images.githubusercontent.com/19898602/123569901-d4f0d380-d7e4-11eb-8c64-3dcfd77e434c.png)
+
+Now I use some hardware to assemble the body of self balancing robot.
+
+![image](https://user-images.githubusercontent.com/19898602/123569918-dc17e180-d7e4-11eb-9573-da2032277e9a.png)
+
+Here I have inserted M5 rod to the base platform and mounted nema 17 stepper motor with the help of 20x20x42 aluminium angles.
+
+![image](https://user-images.githubusercontent.com/19898602/123569936-e33eef80-d7e4-11eb-9bf5-b2826b985e6b.png)
+
+Now I place the middle and top platform on M5 threded rod and fix them with M5 nuts.
+And place PCB on the middle platform on 10 mm spacers.
+
+![image](https://user-images.githubusercontent.com/19898602/123569948-eb972a80-d7e4-11eb-8511-ef2cdfb9ba34.png)
+
+
+1500mah 11.7 V lipo batter is placed on base platform and hold it on place with a belt.
+
+![image](https://user-images.githubusercontent.com/19898602/123569960-f2be3880-d7e4-11eb-827d-5780a899ceaa.png)
+
+
+Now finally I secure the wheel on the shaft of stepper motor and tighten it with M3 bot.
+
+
+![image](https://user-images.githubusercontent.com/19898602/123569976-f9e54680-d7e4-11eb-9582-ce709594a67b.png)
+
+In this way our robot assembly is completed.
+Now we can move towards the programming of self balancing robot.
+
+# Programming
+
+
+Download [balancingwii](https://github.com/mahowik/BalancingWii)
+
+To start programming arduino first we need to download a firmware for balancing robot called balancingwii.
+this firmware is based on Multiwii firmware used for quad-copter and multi-rotor flying drones. you can learn here more about Multiwii.
+special thanks to Mahowik who develop this firmware.
+Download the firmware balancingwii by clicking here, now click on green button clone or download.
+The firmware will downloaded in your PC in ZIP format.
+
+![image](https://user-images.githubusercontent.com/19898602/123570066-1e412300-d7e5-11eb-90e7-6bb464bdd8cd.png)
+
+Now unzip the downloaded file, open the newly created folder and delete that three file highlighted in image, this we not need at all.
+also the name of folder containing balancingwii.ino file both must be same other wise you will get compiling error.
+now open the balancingwii.ino file in arduino and compile the code and upload it with out changing any thing.
+Don’t forget to turn off BT module before uploading the code.
+
+If your MPU6050 orientation is different then my one you need to change this line in config.h file
+You can change here PITCH to ROLL
+
+>  #define CURRENT_AXIS    PITCH       // possible to choose ROLL or PITCH axis as current.
+
 
 
 
