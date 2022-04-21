@@ -1,7 +1,7 @@
 
 # DIY-Self-Balancing-Robot
 
-![THUMNNNNNN-816x459](https://user-images.githubusercontent.com/19898602/123568758-9ce89100-d7e2-11eb-82ef-9915cecd09f4.png)
+![image](https://user-images.githubusercontent.com/19898602/164518376-1d63b3cf-45b9-46aa-abf4-e89dc3f51ca8.png)
 
 
 Hello friends this post is about DIY self balancing robot in this post I’ll show how you can build your own Self balancing robot.
@@ -95,16 +95,60 @@ Guys I will recommended you must have to try [JLCPCB.com](https://jlcpcb.com/IAT
 service for your future PCB need.
 
 
-To order PCB just click here [JLCPCB.com](https://jlcpcb.com/IAT)
-there are so many welcome benefits for new users hurry up visit [JLCPCB.com](https://jlcpcb.com/IAT)
+
 
 ![MVI_5077 00_01_19_01 Still003](https://user-images.githubusercontent.com/19898602/123571896-d2907880-d7e8-11eb-8c13-19799fdce237.jpg)
 
 
-![image](https://user-images.githubusercontent.com/19898602/123569241-9a3a6b80-d7e3-11eb-9761-8ae0c2c71cfb.png)
+![image](https://user-images.githubusercontent.com/19898602/164518089-be348c59-30ee-4556-aa4a-779f3bc432f7.png)
+
+![image](https://user-images.githubusercontent.com/19898602/164518152-d4fd3079-fb61-4874-ab11-73dea26ff139.png)
+
+
+
+
 
 
 ![image](https://user-images.githubusercontent.com/19898602/123569250-9dcdf280-d7e3-11eb-9d46-eaf830e8057b.png)
+
+
+![image](https://user-images.githubusercontent.com/19898602/164518885-9f67ca3d-d76c-4ec2-b4e8-d9ede1087b35.png)
+
+
+
+
+If you seriously need quality PCB quickly in your hand then you must have to try JLCPCB PCB manufacturing service. They have Special offer of $2 for 1-4 Layer PCBs, free SMT assembly monthly. If new user signup today from this link [JLCPCB.com](https://jlcpcb.com/IAT) you will get welcome coupons from JLCPCB.
+
+
+![image](https://user-images.githubusercontent.com/19898602/159014034-3c9a50c3-61c3-40d2-836d-9cadc2317d33.png)
+![image](https://user-images.githubusercontent.com/19898602/164385177-de123350-4a1f-4d0f-9f38-68ed7dbd5a9f.png)
+
+
+
+SMT Assembly service of [JLCPCB.com](https://jlcpcb.com/IAT) is cherry on top now get your PCB fully assembled and save your time and money
+Select components for your PCB from there Parts Library of 200k+ in-stock components
+they are offering $27 valued New User coupons  & $24 SMT coupons every month
+$8.00 setup fee, and $0.0017  per joint
+
+Now no need to order components separately for you PCB and get free from stress of soldering them on PCB just try PCB SMT assembly service and get you PCB with components pre assembled and ready for the project
+
+
+👉 Try PCBA service of [JLCPCB.com](https://jlcpcb.com/IAT) and save your time and money, get PCB ready for project, 200K+ components in library of [JLCPCB.com](https://jlcpcb.com/IAT) as well as 3rd party         parts to choose from. 
+    Assembly will support 10M+ parts from Digikey, mouser
+    
+👉 $27 valued New User coupons 
+
+👉 $24 SMT coupons every month
+
+
+* Follow the simple step to get this PCB board.
+
+1 - Download the circuit board Gerber file: https://oshwlab.com/sharmaz747/bc547-based-water-level-indicator
+
+2 - Create an account using the link below: [JLCPCB.com](https://jlcpcb.com/IAT)
+
+3 - visit [JLCPCB.com](https://jlcpcb.com/IAT) Add the Gerber file and place the order. 
+
 
 
 
@@ -135,6 +179,11 @@ D8 – DIR2 (PORTB 0)
 
 
 D4 – ENABLE (for both)
+
+
+
+
+
 
 
 
