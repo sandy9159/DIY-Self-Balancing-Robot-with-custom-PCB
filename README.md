@@ -1,5 +1,5 @@
 
-# DIY-Self-Balancing-Robot
+# DIY-Self-Balancing-Robot-With-Custom-PCB
 
 ![image](https://user-images.githubusercontent.com/19898602/164518376-1d63b3cf-45b9-46aa-abf4-e89dc3f51ca8.png)
 
